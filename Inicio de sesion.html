@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nevo</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="formulario">
+        <h1>Inicio de sesión</h1>
+        <form method="POST" action="login.php">
+            <div class="Nombre">
+                <input type="text" name="usuario" required />
+                <label>Nombre de usuario</label>
+            </div>
+            <div class="Contraseña">
+                <input type="password" name="contraseña" required />
+                <label>Contraseña</label>
+            </div>
+            <div class="Recordar_contraseña">¿Olvidó su contraseña?</div>
+            
+            <input type="hidden" name="accion" value="iniciar_sesion">
+            <input type="submit" value="Iniciar sesión" />
+
+            <div class="Registrarse">
+                ¿No tienes cuenta? <a href="registro.html">Crea una aquí</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
