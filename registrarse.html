@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="utf-8" />
@@ -9,8 +9,12 @@
 </head>
 <body>
     <div class="formulario">
-        <h1>Inicio de sesión</h1>
-        <form method="POST" action="login.php">
+        <h1>Registro</h1>
+        <form method="POST" action="registrarse.php">
+            <div class="Nombre">
+                <input type="text" name="Correo_electronico" required />
+                <label>Correo electronico</label>
+            </div>
             <div class="Nombre">
                 <input type="text" name="usuario" required />
                 <label>Nombre de usuario</label>
@@ -19,14 +23,12 @@
                 <input type="password" name="contraseña" required />
                 <label>Contraseña</label>
             </div>
-            <div class="Recordar_contraseña">¿Olvidó su contraseña?</div>
-            
-            <input type="hidden" name="accion" value="iniciar_sesion">
-            <input type="submit" value="Iniciar sesión" />
-
-            <div class="Registrarse">
-                ¿No tienes cuenta? <a href="registrarse.html">Crea una aquí</a>
+            <div class="Confirmar_ontraseña">
+                <input type="password" name="Confirmar_ontraseña" required />
+                <label>Confirme su contraseña</label>
             </div>
+            <input type="hidden" name="accion" value="Registrarse">
+            <input type="submit" value="Registrarse" />
         </form>
     </div>
 </body>
