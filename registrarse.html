@@ -4,16 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nevo</title>
+    <title>Nevo - Registro</title>
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <div class="formulario">
         <h1>Registro</h1>
         <form method="POST" action="registrarse.php">
-            <div class="Nombre">
+            <div class="CorreoElectronico">
                 <input type="text" name="Correo_electronico" required />
-                <label>Correo electronico</label>
+                <label>Correo electrónico</label>
             </div>
             <div class="Nombre">
                 <input type="text" name="usuario" required />
@@ -25,9 +25,8 @@
             </div>
             <div class="Confirmar_contraseña">
                 <input type="password" name="Confirmar_contraseña" required />
-                <label>Confirme su contraseña</label>
+                <label>Confirmar contraseña</label>
             </div>
-            <input type="hidden" name="accion" value="Registrarse">
             <input type="submit" value="Registrarse" />
         </form>
     </div>
