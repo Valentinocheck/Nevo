@@ -4,7 +4,7 @@ ini_set('display_errors', 1);
 error_reporting(E_ALL);
 
 // Conexión a la base de datos
-$conexion = new mysqli("localhost", "user", "asd1234$$", "nevo");
+$conexion = new mysqli("localhost", "root", "", "nevo");
 if ($conexion->connect_error) {
     die("Conexión fallida: " . $conexion->connect_error);
 }
